@@ -62,7 +62,7 @@ Report model performance in terms of perplexity. Provide 5 outputs each from you
 
 # 2. [Deep Learning using R](https://github.com/yvrjsharma/R/blob/master/Guided_Project_DL_R_Lang.R)
 ## Implementing Neural Network in R using Keras
-![](/image/md-mahdi-omdlGQGcoGI-unsplash.jpg)
+![](/images/md-mahdi-omdlGQGcoGI-unsplash.jpg)
 
 I have implemented a small three layer Neural Network to analyse a toy image datset using Keras and R language.
 The toy dataset and supporting R code can be found [here](https://github.com/yvrjsharma/R).
@@ -70,7 +70,7 @@ The toy dataset and supporting R code can be found [here](https://github.com/yvr
 The toy dataset consists of tweleve images with six each of cars and aeroplanes. These are colored images and have been resized to 28 by 28 pixels for implementing a simple and fast neural network on R.
 To handle image data I had to install a new package called EBImage. The process of downloading and loading can be seen in the codefile.
 
-I have resized the images to 28*28 pixels converting the images to 28*28*3 size 3D tensors. To use Keras, we need to create tensors as inputs.
+I have resized the images to 28x28 pixels converting the images to 28x28x3 size 3D tensors. To use Keras, we need to create tensors as inputs.
 If you look at the pixel values in an image, pixels with smaller values indicate darker spots in the images. This step is called preprocesing of images.
 
 After this, processed images are divided into training and test sets. Out of the total available twelve images, ten are kept as training while 2 are left over for training.
