@@ -28,7 +28,7 @@ Distributed embeddings provide a lot of power in text classification, but there 
 From the various models created above, I am saving the model with highest accuracy. There are many ways in which models can be saved. I’m using .h5 file extensions to save a model. This file extension can save model architecture as well as mmodel weights. I have clearly documented my design in the code as well as Readme files. 
 
 
-# [Deep Learning using R](https://github.com/yvrjsharma/yvrjsharma.github.io/blob/master/NeuralNetworkR.md)
+# [Deep Learning using R](https://github.com/yvrjsharma/R/blob/master/Guided_Project_DL_R_Lang.R)
 ## Implementing Neural Network in R using Keras
 ![](/images/md-mahdi-omdlGQGcoGI-unsplash.jpg)
 
