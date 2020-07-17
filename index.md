@@ -33,7 +33,7 @@ From the various models created above, I am saving the model with highest accura
 ![](/images/md-mahdi-omdlGQGcoGI-unsplash.jpg)
 
 I have implemented a small three layer Neural Network to analyse a toy image datset using Keras and R language.
-The toy dataset and supporting R code can be found [here] (https://github.com/yvrjsharma/R).
+The toy dataset and supporting R code can be found [here](https://github.com/yvrjsharma/R).
 
 The toy dataset consists of tweleve images with six each of cars and aeroplanes. These are colored images and have been resized to 28 by 28 pixels for implementing a simple and fast neural network on R.
 To handle image data I had to install a new package called EBImage. The process of downloading and loading can be seen in the codefile.
