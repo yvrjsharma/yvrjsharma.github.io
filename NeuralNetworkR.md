@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html> 
-
 ## Implementing Neural Network in R using Keras
 
 I have implemented a small three layer Neural Network to analyse a toy image datset using Keras and R language.
