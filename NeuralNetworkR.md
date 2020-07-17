@@ -1,8 +1,5 @@
 
-
----
-title: Implementing Neural Network in R using Keras
-layout: template
+ 
 filename: NeuralNetworkR.md
 --- 
 
