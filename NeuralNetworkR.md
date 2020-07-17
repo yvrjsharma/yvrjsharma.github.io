@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Hello World</h1>
+<p>I'm hosted with GitHub Pages.</p>
+</body>
+</html>
 
 ## Implementing Neural Network in R using Keras
 
@@ -18,7 +25,7 @@ Now that we are ready with our datasets, we need to assign training and testing 
 Along with this we need to make sure that labels are also treated as tensors and not arrays or lists. For this purpose we will use to_categorical functon to convert labels into tensors as is required by Keras framework.
 This process is called One Hot Encoding of labels.
 
-After we are done with all preprocessing of images, we will start building the sequential Keras model. The activation function used throughout the neural network is Rectified Linear Unit or ReLU function. 
+After we are done with all preprocessing of images, we will start building the sequential Keras model. The activation function used throughout the neural network is Rectified Linear Unit or ReLU function.
 The number of hidden units are chosen as 256 for first hidden level, 128 for next layer, and output layer has 2 units. All layers are densely connected with preceeding and following layers as well.
 The output layer has Softmax function with Binary Crossentropy loss function. The optimizer I have used is ADAM and in binary classificationit is considered an industry norm in current times.
 Also note that, accuracy is chosen as the metrics of calculation.
@@ -28,4 +35,4 @@ Once the model gets trained on ten training set images of cars and aeroplanes, w
 Since the dataset is so small, the training set prediction is hundred percent.
 
 When the model is verified on our test data of two different class images, it gave a hundred percent accuracy rate on test data as well. This is completely due to very small train and test data.
-This concludes our model building on R, and the tool that is used is RStudio. The code and toy data can be obtained from the repository given in this article. 
+This concludes our model building on R, and the tool that is used is RStudio. The code and toy data can be obtained from the repository given in this article.
