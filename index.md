@@ -93,3 +93,18 @@ Since the dataset is so small, the training set prediction is hundred percent.
 When the model is verified on our test data of two different class images, it gave a hundred percent accuracy rate on test data as well. This is completely due to very small train and test data.
 This concludes our model building on R, and the tool that is used is RStudio. The code and toy data can be obtained from the repository given in this article.
 
+
+
+# 2. [How you can do Image Data Augmentation using Keras](https://github.com/yvrjsharma/R/blob/master/Guided_Project_DL_R_Lang.R)
+## Implementing Neural Network in R using Keras
+![](/images/john-price-wzRQfEw9CMc-unsplash.jpg)
+
+This summer I am doing my dissertation on Transfer learning in the field of multi-spectral satellite images. When I started off on it by collecting relevant dataset, I realised that the data was not large enough for my deep learning models to train on and give good prediction scores. For this purpose, I decided to explore Image Augmentation to increase my data size. After doing couple of MOOCs aroud Image Augmentation using Keras, I realised that I was still strugging a bit in implementing the process in my own project. So I decided to this articel as a one-stop solution for any one who is in the same situation and is looking for a straight-forward solution with full and easy to understand explanations. 
+In this article, you wil find the following details -
+- What is augmentation and why it is needed, 
+- The Keras code to implement augmentation, 
+- Sample images to try it on, and 
+- Useful links for your further reference
+
+#### What is Image Augmentation 
+
