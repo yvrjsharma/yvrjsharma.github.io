@@ -95,7 +95,7 @@ This concludes our model building on R, and the tool that is used is RStudio. Th
 
 
 
-# 2. [How you can do Image Data Augmentation using Keras](https://github.com/yvrjsharma/R/blob/master/Guided_Project_DL_R_Lang.R)
+# 2. [How you can do Image Data Augmentation using Keras](https://github.com/yvrjsharma/Image-Analysis/blob/master/Image%20Augmentation%20Using%20Keras%20ImageDataGenerator.ipynb)
 ## Implementing Neural Network in R using Keras
 ![](/images/john-price-wzRQfEw9CMc-unsplash.jpg)
 
