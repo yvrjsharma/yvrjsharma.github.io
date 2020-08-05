@@ -128,7 +128,7 @@ Please find the code on my github repository at this [link](https://github.com/y
 - Krizhevsky A, Sutskever I, Hinton GE. ImageNet classification with deep convolutional neural networks. Adv Neural Inf Process Syst. 2012;25:1106–14.
 
 
-# 3. [Creating a R Notebook for Probability and Statistical Inference](https://github.com/yvrjsharma/R/blob/master/stats.md)
+# 4. [Creating a R Notebook for Probability and Statistical Inference](https://github.com/yvrjsharma/R/blob/master/stats.md)
 ![](/images/carlos-muza-hpjSkU2UYSU-unsplash.jpg)
 
 ### Understanding variables and relationships between them
