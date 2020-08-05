@@ -95,8 +95,7 @@ This concludes our model building on R, and the tool that is used is RStudio. Th
 
 
 
-# 2. [How you can do Image Data Augmentation using Keras](https://github.com/yvrjsharma/Image-Analysis/blob/master/Image%20Augmentation%20Using%20Keras%20ImageDataGenerator.ipynb)
-## Implementing Neural Network in R using Keras
+# 3. [How you can do Image Data Augmentation using Keras](https://github.com/yvrjsharma/Image-Analysis/blob/master/Image%20Augmentation%20Using%20Keras%20ImageDataGenerator.ipynb)
 ![](/images/john-price-wzRQfEw9CMc-unsplash.jpg)
 
 This summer I am doing my dissertation on Transfer learning in the field of multi-spectral satellite images. When I started off on it by collecting relevant dataset, I realised that the data was not large enough for my deep learning models to train on and give good prediction scores. For this purpose, I decided to explore Image Augmentation to increase my data size. After doing couple of MOOCs aroud Image Augmentation using Keras, I realised that I was still strugging a bit in implementing the process in my own project. So I decided to this articel as a one-stop solution for any one who is in the same situation and is looking for a straight-forward solution with full and easy to understand explanations. 
@@ -127,3 +126,15 @@ Please find the code on my github repository at this [link](https://github.com/y
 - [Keras Official Blog: Building powerful image classification models using very little data](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html)
 - Shorten C, Khoshgoftaar TM (2019) A survey on image data augmentation for deep learning. Journal of Big Data 6(1), DOI 10.1186/s40537-019-0197-0
 - Krizhevsky A, Sutskever I, Hinton GE. ImageNet classification with deep convolutional neural networks. Adv Neural Inf Process Syst. 2012;25:1106–14.
+
+
+# 3. [Creating a R Notebook for Probability and Statistical Inference](https://github.com/yvrjsharma/R/blob/master/stats.md)
+![](/images/carlos-muza-hpjSkU2UYSU-unsplash.jpg)
+
+### Understanding variables and relationships between them
+In building a General Linear Statistical Model (like Linear Regression model), we first need to understand and define accurately what is happening inside the data. 
+This post is written exactly to find that using statistical tools. The post finds out if there are evidences of relationships in the data and it uses appropriate statistical tests and makes decisions based on their results. 
+A relationship between variables is need to have a strength value and a direction associated with it. This post identifies if there are any differential effects for different groups using statistical tests like Anova and t-test.
+The analysis is based on [Student Performance dataset](https://archive.ics.uci.edu/ml/datasets/student+performance) from UCI ML repository . The R notebook explores two relationships, one between number of absences and final maths grades, other one between maths grades in period one and final maths grades. It will also check for differential effects of gender on number of absences, mother’s job on a student’s final maths grades. Lastly, it will explore if maths grades in period one and two are similar or not.
+
+In order to find out the relationships and differences, this report conducts statistical analysis on the given dataset, and the R Notebook can be accessed by clicking on the  Title of this post or by clicking [here](https://github.com/yvrjsharma/R/blob/master/stats.md). For description of the variables present in this dataset, one can also refer this [paper](https://repositorium.sdum.uminho.pt/bitstream/1822/8024/1/student.pdf).
