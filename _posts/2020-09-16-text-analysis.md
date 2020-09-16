@@ -1,5 +1,6 @@
 ---
 layout: post
+title: "Text Analysis using LSTM,RNN, and CNN"
 date: 2020-09-15
 ---
 
@@ -61,3 +62,5 @@ Report model performance in terms of perplexity. Provide 5 outputs each from you
 - One model with _**all reviews**_ included. 
 - Lastly, with the same data, I have also implemented a **Statistical Model** for language generation.
 - I have also done  comparative analysis between the four models using _**BLEU scores**_
+
+The code for entire project cxan be found on github, [here.](https://github.com/yvrjsharma/RNN)
