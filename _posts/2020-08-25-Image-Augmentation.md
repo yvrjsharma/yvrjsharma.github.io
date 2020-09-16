@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How you can do Image Data Augmentation using Keras"
-date: 2020-09-16
+date: 2020-08-25
 ---
 
 ![](/images/john-price-wzRQfEw9CMc-unsplash.jpg)
