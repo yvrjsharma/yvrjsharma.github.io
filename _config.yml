@@ -2,4 +2,4 @@ theme: jekyll-theme-slate
 title: Yuvraj Sharma, Potrtfolio
 description: These are some of my recent code submissions along with their detailed descriptions.
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+#permalink: /blog/:year/:month/:day/:title
