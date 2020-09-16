@@ -23,10 +23,13 @@ Offlate, researchers have introduced a variety of new neural aprroaches of image
 
 An example of image augmentation on a 64x64 RGB or colored image -
 
-![1](/images/_2_1839230.png)     
-![2](/images/_2_2989151.png)     
-![3](/images/_2_5985086.png)     
-![4](/images/_2_6416129.png) 
+![](/images/_2_1839230.png)     
+
+![](/images/_2_2989151.png)     
+
+![](/images/_2_5985086.png)     
+
+![](/images/_2_6416129.png) 
 
 #### The Keras code to implement augmentation
 Please find the code on my github repository at this [link](https://github.com/yvrjsharma/Image-Analysis/blob/master/Image%20Augmentation%20Using%20Keras%20ImageDataGenerator.ipynb). Please note that it is a Jupyter Notebook along with comments to better unerstand the flow.
