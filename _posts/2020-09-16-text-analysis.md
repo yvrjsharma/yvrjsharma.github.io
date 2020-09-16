@@ -1,10 +1,9 @@
 ---
 layout: post
-title: "Text Analysis using LSTM,RNN, and CNN"
 date: 2020-09-15
 ---
 
-# [page.title](https://github.com/yvrjsharma/RNN)
+# [Text Analysis using LSTM,RNN, and CNN](https://github.com/yvrjsharma/RNN)
 
 ## PART-1: IMDB Modelling Task 
 ![](/images/markus-winkler--fRAIQHKcc0-unsplash.jpg)
