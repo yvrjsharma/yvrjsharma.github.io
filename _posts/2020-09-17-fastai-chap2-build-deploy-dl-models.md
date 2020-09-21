@@ -108,11 +108,11 @@ actress = DataBlock(
 
 ```
 To turn our downloaded into dataloaders object, fastai needs atleast four different things -
-- 1. What kind of data we are working with. This tuple specify what type of data we want as dependent and independent variables respectively.  
+1. What kind of data we are working with. This tuple specify what type of data we want as dependent and independent variables respectively.  
 `blocks=(ImageBlock, CategoryBlock)`
-- 2. How to get the list of items. `get_image_files` takes a path and returns a list of all of the images in that path.
-- 3. How to label these items. `get_y=parent_label` givesthe name of the folder in which images are kept as the class label.
-- 4. How to create the validation set. `RandomSplitter(valid_pct=0.2, seed=42)` gives you train and validation sets by splitting the availabel data into 80-20% respectively.
+2. How to get the list of items. `get_image_files` takes a path and returns a list of all of the images in that path.
+3. How to label these items. `get_y=parent_label` givesthe name of the folder in which images are kept as the class label.
+4. How to create the validation set. `RandomSplitter(valid_pct=0.2, seed=42)` gives you train and validation sets by splitting the availabel data into 80-20% respectively.
 
 We feed images in our model in batches to train on them. As such, the size of eac image should be same in a batch. This is taken care by item_transform functions, and here we are passing it size as 128 by 128 pixels.
 
@@ -139,3 +139,26 @@ dls.train.show_batch(max_n=8, nrows=2, unique=True)
 Note that, here I am applying batch transformation by using `batch_tfms` parameter. `aug_transforms` works best for the set of augmentation operations listed above. I am fastai enables the parameter tuning very easy as I am simply using the dataloader object and decribing or adding new parameters on it. The output that we get is -
 
 ![](/images/out2.png)
+
+### 3. Training the  model
+
+I will now create the `learner` and then fine-tune it -
+
+```learn = cnn_learner(dls, resnet18, metrics=error_rate)
+learn.fine_tune(5)
+```
+
+Lets understand these code lines. First line instructs fastai to create a convolutional neural network (CNN) and specifies the architecture fastai should use (`resnet18`), this will be the kind of model that fastai will create. `Resnet` is a standard architecture which is both fast and accurate for most of the image datasets and problems. The 18 in `resnet18` refers to the depth or the number of layers in the network. The other options are 50,101 and 152. `metrics=error_rate` is meant for measuring the quality of the model using the validation set. This metric value will be printed at the end of each epoch. An epoch is one complete round of the model through the image dataset.
+
+There is one more parameter called `pretrained` which is default set to `true`. This would mean that `resnet18` is already trained on `ImageNet` dataset. ImageNet refers to the large image dataset consisting of more than 1.2 million images divided into 1000 classes. Each year a classification competition is held which is called ILSVRC, in which individuals and teams take part to build classification and detection models. Historically the `error rate` has decreased in every competition year. So, this `resnet18` is trained on this large dataset and had attained very high state-of-the-art performance on it. Thus the wweights or parameters of this `resnet` model are pretrained or learned from the previous task only. Using a pretrained model into a new classification task is called **Tansfer Learning**. Using such pretrained models, reduces the training time as well as improve the model performance manifolds.
+
+Second line `learn.fine_tune(4)` implies that a _pretrained model_ is used on a new dataset, or it  will be _fine tuned_ on the new dataset. Pretrained or existing weights are not disturbed and only last few layers are trained on the new data. I will write a separate post later explaining the reasoning behind and performance of transfer learning using fine tuning.
+
+Lets look at the performance of our model, by plotting the confusion metrics -
+
+```
+interp = ClassificationInterpretation.from_learner(learn)
+interp.plot_confusion_matrix()
+```
+
+![](/images/out3)
