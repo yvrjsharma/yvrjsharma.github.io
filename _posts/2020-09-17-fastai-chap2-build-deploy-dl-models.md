@@ -71,8 +71,8 @@ im = Image.open(dest)
 im.to_thumb(128,128)
 ```
 
-The sample output that we get is -
-![]('/images/download.png')
+The sample output that we get is:
+![](/images/download.png)
 
 This seems to be working nicely till now. Next, we need to download and save 150 images each for both the actresses. The code for doing so is -
 
