@@ -144,7 +144,8 @@ Note that, here I am applying batch transformation by using `batch_tfms` paramet
 
 I will now create the `learner` and then fine-tune it -
 
-```learn = cnn_learner(dls, resnet18, metrics=error_rate)
+```
+learn = cnn_learner(dls, resnet18, metrics=error_rate)
 learn.fine_tune(5)
 ```
 
