@@ -26,3 +26,21 @@ So, I have build a fun web appliction using the techniques that i have learned f
 ![](/images/mybinder.png)
 
 I have used Binder, which is a **free** and _simplest_ method out there to publish your web app online. This allows you to host a POC type or a hobby type project of yours for bigger community to see easily by clicking on a link. I will be sharing below my web application's link as well as how you can do the same. Please keep in mind that this is a free support available online, so it might suffer some glitches or lag time when you will try to access my application online.
+
+## Process in details
+
+This chapter basically allays the doubts like you need vast amount of data and large number of codelines to do deep learning or to build highly acccuracte AI models. This is made possible by using the power of Transfer Learning, Data Augmentation and fastai libraries which are build over Pytorch framework. This is the first time I am using anytihng other then Tensorfloww or Keras, and I must say fastai library is quite intuitive and easy to understand and pick. In any supervised deep learning project, you need good quality data and corresponding labels. Lets start by creating data repositories first.
+
+### 1.  Data Preparation
+In this project, I am basically developing an _actress detector_ model. So first of all i need some images of Jessica Chastain and Bryce Dallas Howard. I am using Bing Image Search API for this. As far as I know, this is the best available option out there if you want to build small size datasets for your POCs or hobby projects.It is free for upto 1000 queries per month and allows you to download 150 images at a time. Bing Image Search API is available as a part of Azure Cognitive Services. For this follow below steps in order:
+
+1. Create your free account on Azure [portal](https://azure.microsoft.com/en-in/free/), system will ask for your credit card details, but dont be alarmed as only 2 INR will get deducted and after your free trail expires, Microsoft Azure will not auto deduct any amount. Money will be ducted only if you want to extend the Azure services.
+
+2. After creating Azure account, [create a cognitive service](https://portal.azure.com/#create/Microsoft.CognitiveServicesAllInOne), by following instruction given on the azure link.
+
+3. Create a [Bing Image Search Resource](https://portal.azure.com/#create/Microsoft.CognitiveServicesBingSearch-v7)
+
+4. Go to 'Keys and Endpoint' in this cognitive service. Copy one of the two keys shown there and paste it somewhere safe for a while for later use.
+
+Now we will use this key to access Bing search engine and will download a set of 150 images for each of the class or the actress name. The code for assigining the key to environment variable is, where _XXX_ is the key you just copied  -
+                    `key = os.environ.get('AZURE_SEARCH_KEY', 'XXX')`
