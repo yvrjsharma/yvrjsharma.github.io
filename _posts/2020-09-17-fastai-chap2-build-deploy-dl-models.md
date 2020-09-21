@@ -11,4 +11,4 @@ Hi Everyone, so this is my first blog on the [Fastai](https://www.amazon.in/Deep
 
 ## Building a Computer Vision model
                     ![](/images/chap2_fastai.jpeg)
-So, i have build a fun web appliction using the learninigs from this chapter
+So, I have build a fun web appliction using the techniques that i have learned from this chapter. My web application identifies whether the incoming image (one image at a time) is of the actress Jessica Chastain or Bryce Dallas Howard.
