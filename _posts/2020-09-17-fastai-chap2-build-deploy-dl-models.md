@@ -44,27 +44,30 @@ In this project, I am basically developing an _actress detector_ model. So first
 
 Now we will use this key to access Bing search engine and will download a set of 150 images for each of the class or the actress name. The code for assigining the key to environment variable is, where _XXX_ is the key you just copied  
 
-```key = os.environ.get('AZURE_SEARCH_KEY', 'XXX')
+`key = os.environ.get('AZURE_SEARCH_KEY', 'XXX')`
+
+
+Lets look at a sample image that is downloaded for Jessica Chastain as a query value. First getting a list of URLs:
+
 ```
-
-Lets look at a sample image that is downloaded for Jessica Chastain as a query value. First getting a list of URLs -
-
-```results = search_images_bing(key, 'jessica chastain')
+results = search_images_bing(key, 'jessica chastain')
 ims = results.attrgot('content_url')
-len(ims)```
-
+len(ims)
+```
 
 Now downloading a sample value corresponding to the first image search result -
 
 
-```dest = '/your/google/drive/location/jessica1.jpg'
+```
+dest = '/your/google/drive/location/jessica1.jpg'
 download_url(ims[0], dest)
 ```
 
 Displaying the results -
 
 
-```im = Image.open(dest)
+```
+im = Image.open(dest)
 im.to_thumb(128,128)
 ```
 
@@ -74,7 +77,8 @@ The sample output that we get is -
 This seems to be working nicely till now. Next, we need to download and save 150 images each for both the actresses. The code for doing so is -
 
 
-```actress_names = 'jessica chastain', 'bryce dallas howard'
+```
+actress_names = 'jessica chastain', 'bryce dallas howard'
 path = 'your/google/drive/location/where/you/want/save/data'
 for o in actress_names:
     dest = path + o
