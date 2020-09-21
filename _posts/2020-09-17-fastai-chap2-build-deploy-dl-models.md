@@ -11,6 +11,6 @@ Hi Everyone, so this is my first blog on the [Fastai](https://www.amazon.in/Deep
 
 ## Building a Computer Vision model
 
-![](/images/chap2_fastai.jpeg)
+              ![](/images/chap2_fastai.jpeg)
 
-So, I have build a fun web appliction using the techniques that i have learned from this chapter. My web application identifies whether the incoming image (one image at a time) is of the actress Jessica Chastain or Bryce Dallas Howard.
+So, I have build a fun web appliction using the techniques that i have learned from this chapter. My web application identifies whether the incoming image (one image at a time) is of the actress Jessica Chastain or Bryce Dallas Howard. So, the idea is to identify an incoming image to onee of the two computer vision classes. Now, I could have gone with classiffying between images of Cats and Dogs or between different food items or between different clothing items, but I chose this particular case of doppelganger as these two actress have confused me previously. I used to get confused betwenn the two them and this has been acknowledged by various online publications as well. Okay, fun apart, this has been an interesting application to develop and even though my model was abel to predict with 91% validation accuracy between the two actresses, new incoming images of Bryce Dallas Howard were often confused with Jessica Chastain, confirming my doubts that sometimes it is [very difficult to identify between them who's who](https://www.today.com/video/can-you-tell-jessica-chastain-and-bryce-dallas-howard-apart-461250627836).
