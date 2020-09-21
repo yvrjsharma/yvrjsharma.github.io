@@ -11,6 +11,8 @@ Hi Everyone, so this is my first blog on the [Fastai](https://www.amazon.in/Deep
 
 ## Gathering Data
 
+![](/images/hector-j-rivas-QNc9tTNHRyI-unsplash.jpg)
+
 I have used Microsoft Bing's limited period image free image download web API. The free API version enables me to download 150 images in one go. For this I had to create an Azure account and register for Bing Image earch application over there, and I will be alking you through my steps and will guide you againts possible hickups that I encountered during my efforts. This was an interetsing and fun part in the entire effort of building a model and then deploying it.
 This part is crucial for a data scientist because untill and unless you have clean training and validation data, you cant really build a model. A Data Science project pipleline starts with Gathering and Cleaning of data and ends up at Deploying the model.
 
