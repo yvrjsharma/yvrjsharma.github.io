@@ -72,6 +72,7 @@ im.to_thumb(128,128)
 ```
 
 The sample output that we get is:
+
 ![](/images/download.png)
 
 This seems to be working nicely till now. Next, we need to download and save 150 images each for both the actresses. The code for doing so is -
@@ -95,4 +96,46 @@ Our folder has image files, as we'd expect. However, when we download images fro
 
 ### 2. Data Loaders
 
-Data Loaders is a class which takes the Data Loader objects passed to it, and convert them into train and validation set
+Data Loaders is a class which takes the Data Loader objects passed to it, and convert them into train and validation set.
+
+```
+actress = DataBlock(
+    blocks=(ImageBlock, CategoryBlock),
+    get_items=get_image_files,
+    splitter=RandomSplitter(valid_pct=0.2, seed=42),
+    get_y=parent_label,
+    item_tfms=Resize(128))
+
+```
+To turn our downloaded into dataloaders object, fastai needs atleast four different things -
+- 1. What kind of data we are working with. This tuple specify what type of data we want as dependent and independent variables respectively.  
+`blocks=(ImageBlock, CategoryBlock)`
+- 2. How to get the list of items. `get_image_files` takes a path and returns a list of all of the images in that path.
+- 3. How to label these items. `get_y=parent_label` givesthe name of the folder in which images are kept as the class label.
+- 4. How to create the validation set. `RandomSplitter(valid_pct=0.2, seed=42)` gives you train and validation sets by splitting the availabel data into 80-20% respectively.
+
+We feed images in our model in batches to train on them. As such, the size of eac image should be same in a batch. This is taken care by item_transform functions, and here we are passing it size as 128 by 128 pixels.
+
+Actual source of data is given to the dataloaders object as shown below -
+
+`dls = actress.dataloaders(path)`
+
+We can also look at a sample of images from validation or training dataloader objects as shown (code and output) -
+
+`dls.valid.show_batch(max_n=4, nrows=1)`
+
+![](/image/ou1.png)
+
+Since our dataset is small, we need to augment the size by doing operations on images which create a new image without changing the meanining or affetcting the class labels. Examples of such operationsare - flipping an image horrizontaly and vertically, brightness and contrast changes, shearing an image or warping it at an angle.
+
+The code that I am using for this augmentation is -
+
+```
+actress = actress.new(item_tfms=Resize(128), batch_tfms=aug_transforms(mult=2))
+dls = actress.dataloaders(path)
+dls.train.show_batch(max_n=8, nrows=2, unique=True)
+```
+
+Note that, here I am applying batch transformation by using `batch_tfms` parameter. `aug_transforms` works best for the set of augmentation operations listed above. I am fastai enables the parameter tuning very easy as I am simply using the dataloader object and decribing or adding new parameters on it. The output that we get is -
+
+![](/images/out2.png)
