@@ -95,4 +95,4 @@ Our folder has image files, as we'd expect. However, when we download images fro
 
 ### 2. Data Loaders
 
-Data Loaders is a class which
+Data Loaders is a class which takes the Data Loader objects passed to it, and convert them into train and validation set
