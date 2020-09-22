@@ -162,4 +162,34 @@ interp = ClassificationInterpretation.from_learner(learn)
 interp.plot_confusion_matrix()
 ```
 
-![](/images/out3)
+![](/images/out3.png)
+
+Now, fastai comes with wonderful functionality of identifying the images which have high loss values as well as which are incorrectly classified by our model. As we can see there are a total of 5 incorrect classifications. Using below code line, I am displaying the  images with high loss values, along with their predicted label, followed by actual label, loss value and lastly predicting accuracy.
+
+![](/images/out4.png)  
+
+Sometimes, and since our dataset size is very small, we can make good use of this information and can counter check if the validation set has incorrect actual labels or not.
+The book suggests that one should follow this intuitive approach to doing data cleaning. Build a quick, simple and small model first, and then use it to help identify incorrectly identified actual class labels as suggested above. There is also a handy GUI data cleaner that comes with fastai bundle and it is called `ImageClassifierCleaner`, but more on it maybe later in another post.  
+
+### 4. Turning trained Model into an Online Application
+
+**Saving Model**
+
+A model consists of two parts - architecture and the trained weights. Easy way to save a model is to save both of them together, that way you don't have to load them separately at the time of predicting results on new value or drwaing an inference. To save both elements together in one go, fastai uses `export` method. Using method fastai saves a pickle file or a serialized file.
+
+```
+save_path = Path('/path/gdrive/to/your/location/')
+learn.export(save_path/'actress.pkl')
+```
+
+**Using Model as Inference**
+
+We can use `load_learner` method of fastai to reload a model back into memory and then use it draw _inference_ on an incoming image. To do this, just pass the filename and path to `predict` method of fastai. It will return three items - predicted label class, index of predicted label, and probabilities of each class.
+
+`learn_inf.predict(save_path/'jessica-sample.jpg')`  
+
+Output will be -
+
+`('jessica', tensor(1), tensor([0.0211, 0.9789]))`
+
+**Building an App**
