@@ -171,7 +171,7 @@ Now, fastai comes with wonderful functionality of identifying the images which h
 Sometimes, and since our dataset size is very small, we can make good use of this information and can counter check if the validation set has incorrect actual labels or not.
 The book suggests that one should follow this intuitive approach to doing data cleaning. Build a quick, simple and small model first, and then use it to help identify incorrectly identified actual class labels as suggested above. There is also a handy GUI data cleaner that comes with fastai bundle and it is called `ImageClassifierCleaner`, but more on it maybe later in another post.  
 
-### Turning trained Model into an Online Application
+## 4. Turning trained Model into an Online Application
 
 **Saving Model**
 
@@ -235,3 +235,27 @@ Now, please go ahead and install Voila and enable the jupyter extension as shown
 ```
 
 **Deploying your Model**
+
+As mentioned at the start, I am going to use [**Binder**](https://mybinder.org/) app to deploy or publish my app that I have just created. It can be done, by foloowing some easy steps-
+
+1. Create a Github Repository and place your saved model file (actress.pkl), your notebook (.ipynb file) with jupyter extension enabled in it, a Requirements.txt file with the contents as shown  and an optional Readme markdown file to provide a brief to a visitor.
+2. Paste your Repository's URL exactly as shown in the below _Binder_ image (with trailing forward slash)
+3. Change the dropdown to _URL_
+4. In `Url to open` type `/voila/render/name_of_your_notebook.ipynb `
+5. Copy the url getting displayed. You can use this to share your app with someone else.
+6. Click Launch button lastly.
+
+Make sure the contents of Requirements.txt are exactly these -
+
+```
+voila
+fastai>=2
+pillow<7
+packaging
+ipywidgets==7.5.1
+
+```
+
+Also, make sure that your jupyter notebook or the .ipynb file, looks like this  -
+
+![](/images/app.png)
