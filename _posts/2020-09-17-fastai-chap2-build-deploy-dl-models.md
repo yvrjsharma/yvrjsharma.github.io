@@ -259,3 +259,26 @@ ipywidgets==7.5.1
 Also, make sure that your jupyter notebook or the .ipynb file, looks like this  -
 
 ![](/images/app.png)
+
+
+The binder options should be filled as shown in below image, else you might get pesky errors and will waste a lot of time in googling about them and resolving them.
+
+This is how you should configure your Binder app -
+
+![](/images/app.png)
+
+Please look at below snapshot of the app once it gets deployed -
+
+![](/images/app1.png)
+
+And below snapshot shows how the model is behaving on an incoming picture of Jesscica Chastain -
+
+![](/images/app2.png)
+
+Please access my online app at this - [link](https://mybinder.org/v2/gh/yvrjsharma/actress_app/master?urlpath=voila%2Frender%2Factress_app.ipynb)  
+
+Also, please note that this is a free service (so far!), so this link might not stay active in distant future or they ([myBinder](https://mybinder.org/)) might change their terms and services.
+
+So, this completes a very lengthy post about how to create a model, right from gathering image data to the very end of the life-cycle of an ML project - its deployment! ou can use this trick to show off your hobby models or personal projects to companies or recruiters or friends.
+
+Until next time, Cheerio! 
