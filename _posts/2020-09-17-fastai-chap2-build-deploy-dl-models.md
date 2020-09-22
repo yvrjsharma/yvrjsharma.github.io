@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Build Your Own Data, prepare a Computer Vision model, and Deploy your Model on Web"
+title: "Build Your Own Data, Prepare a Computer Vision model, and Deploy your Model on Web"
 date: 2020-09-17
 ---
 ![](/images/photos-hobby-g29arbbvPjo-unsplash.jpg)
@@ -300,7 +300,7 @@ Please feel free to access my online app at this - [link](https://mybinder.org/v
 
 Also, please note that _Binder_ is a free service (so far!), so this link might not stay active in distant future or they ([myBinder](https://mybinder.org/)) might change their terms and services.
 
-So, this completes a very lengthy post about how to create a deep learning model, right from gathering your own image data, to the very end of the life-cycle of an ML project - its actul deployment in production! You can also use this trick to show off your hobby models or personal projects to prospective employer companies or recruiters or friends.
+So, this completes a very lengthy post about how to create a deep learning model, right from gathering your own image data, to the very end of the life-cycle of an ML project - its actual deployment in production! You can also use this trick to show off your hobby models or personal projects to prospective employer companies or recruiters or friends.
 
 Keep Learning!
 Until next time, Cheerio!
