@@ -171,7 +171,7 @@ Now, fastai comes with wonderful functionality of identifying the images which h
 Sometimes, and since our dataset size is very small, we can make good use of this information and can counter check if the validation set has incorrect actual labels or not.
 The book suggests that one should follow this intuitive approach to doing data cleaning. Build a quick, simple and small model first, and then use it to help identify incorrectly identified actual class labels as suggested above. There is also a handy GUI data cleaner that comes with fastai bundle and it is called `ImageClassifierCleaner`, but more on it maybe later in another post.  
 
-### 4. Turning trained Model into an Online Application
+### Turning trained Model into an Online Application
 
 **Saving Model**
 
@@ -193,3 +193,45 @@ Output will be -
 `('jessica', tensor(1), tensor([0.0211, 0.9789]))`
 
 **Building an App**
+
+For this part, you don't have to be proficient in web development. Know that, you can create a complete working app using only your jupyter notebook. Exciting, isn't it? What makes this possible is Ipython widgets called Ipywidgets and a renderer called Voila. Voila allows users to avoid running jupyter notebook from their front-end. It converts the entire notebok into a deployable web-application. While, Ipywidgets helps in building buttons as a part of our raphical user interface.
+
+```
+btn_upload = widgets.FileUpload()
+out_pl = widgets.Output()
+lbl_pred = widgets.Label()
+btn_run = widgets.Button(description='Classify')
+
+
+def on_click_classify(change):
+    img = PILImage.create(btn_upload.data[-1])
+    out_pl.clear_output()
+    with out_pl: display(img.to_thumb(128,128))
+    pred,pred_idx,probs = learn_inf.predict(img)
+    lbl_pred.value = f'Prediction: {pred}; Probability: {probs[pred_idx]:.04f}'
+
+btn_run.on_click(on_click_classify)
+
+```
+
+First line of this code, uses widgets to create a button to upload images, and second displays the image on the screen. Label widget helps in displaying the assigned labels from model inference, and create another buton which will classify the image or will run the inference on our image. Defined function acts as a _click event handler_ on classify button. Putting entire thing into a single box to display all things together -
+
+```
+#hide_output
+VBox([widgets.Label('Select the Actress!'),
+      btn_upload, btn_run, out_pl, lbl_pred])
+
+```
+output is -
+
+![](/images/out5.png)
+
+Now, please go ahead and install Voila and enable the jupyter extension as shown -
+
+```
+!pip install voila
+!jupyter serverextension enable voila —sys-prefix
+
+```
+
+**Deploying your Model**
