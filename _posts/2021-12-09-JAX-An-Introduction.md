@@ -1,5 +1,5 @@
 # JAX - An Introduction
-![](/images/markus-spiske-hvSr_CVecVI-unsplash.jpg)
+![](/images/markus-spiske-hvSr_CVecVI-unsplash1.jpg)
 
 JAX is a combination of Autograd and XLA (Accelerated Linear ALgebra). XLA is a compiler developed by Google to work on TPU units. **Autograd** and **XLA** are brought together by JAX to accelerate ML research by enabling high-speed numerical computing. Its highlights include Python-Numpy code base, ease of Differentiating complex functions, Vectorization, Parallelzation, and Just-In-Time (jit) compilation.
 
