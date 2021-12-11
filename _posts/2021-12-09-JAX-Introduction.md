@@ -1,6 +1,7 @@
 ## Important fetures of JAX
+![](/images/jax_logo_250px.png)
 
-JAX is a combination of Autograd and XLA (Accelerated Linear ALgebra). XLA is a compiler developed by Google to work on TPU units. **Autograd** and **XLA** are brought together by JAX to accelerate ML research by enabling high-speed numerical computing. Its highlights include Python-Numpy code base, ease of Differentiating complex functions, Vectorization, Parallelzation, and Just-In-Time (jit) compilation.
+JAX is a combination of Automatic Differentiation and XLA (Accelerated Linear ALgebra). XLA is a compiler developed by Google to work on TPU units. **Autograd** and **XLA** are brought together by JAX to accelerate ML research by enabling high-speed numerical computing. Its highlights include Python-Numpy code base, ease of Differentiating complex functions, Vectorization, Parallelzation, and Just-In-Time (jit) compilation.
 
 JAX is basically a python library, just like Tensorflow and Pytorch but a bit different, I would not compare the three as is, however this should get you more comfortable around learning JAX. There is another library called FLAX (from Google Research team) which is built on top of it, and you can draw parallels to Keras being built on top of Tensorflow.
 
@@ -13,5 +14,3 @@ JAX has something called Asynchronus Dispatch System in the background. What it 
 JAX uses XLA to optimize your ML code using cool compiler tricks and the programmer doesn't have to worry about it. When you cast your function as Just-in-time or to say when you **jit** your functions they at times become order of magnitude faster, thus giving you performance benefits.
 
 Automatic differentiation makes JAX the most exciting library for deep learning practitioners. Derivatives are integral part of back propagation which in turn is integral to the learning process of neural networks. This is done using **grad()** fnction in JAX.
-
-![](/images/markus-spiske-hvSr_CVecVI-unsplash2.jpg)
