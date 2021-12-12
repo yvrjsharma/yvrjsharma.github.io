@@ -19,6 +19,20 @@ Automatic differentiation makes JAX the most exciting library for deep learning 
 
 **Lets get cracking!**
 
+{% highlight python %}
+
+#Imprting Jax numpy and numpy libraries
+import jax.numpy as jnp
+import numpy as np
+
+#Getting somr essential JAX operations
+from jax import jit, vmap, pmap, grad
+from jax import random
+from jax import device_put
+
+import matplotlib.pyplot as plt
+
+{% endhighlight %}
 
 ```python
 #Imprting Jax numpy and numpy libraries
