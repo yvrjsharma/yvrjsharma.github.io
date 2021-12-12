@@ -1,5 +1,7 @@
-## Important fetures of JAX
+
 ![](/images/jax_logo_250px.png)
+
+
 
 JAX is a combination of Automatic Differentiation and XLA (Accelerated Linear ALgebra). XLA is a compiler developed by Google to work on TPU units. **Autograd** and **XLA** are brought together by JAX to accelerate ML research by enabling high-speed numerical computing. JAX's highlights include Python-Numpy code base, ease of Differentiating complex functions, Vectorization, Parallelzation, and Just-In-Time (jit) compilation.
 
