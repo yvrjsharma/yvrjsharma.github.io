@@ -19,8 +19,11 @@ Automatic differentiation makes JAX the most exciting library for deep learning 
 
 **Lets get cracking!**
 
-
-{% raw %}
+<pre>
+  <code class="python">
+    import numpy as np
+  </code>
+</pre>
 
 ```python
 #Imprting Jax numpy and numpy libraries
@@ -35,7 +38,7 @@ from jax import device_put
 import matplotlib.pyplot as plt
 
 ```
-{% endraw %}
+
 
 
 Jax's syntax is similar to numpy.
