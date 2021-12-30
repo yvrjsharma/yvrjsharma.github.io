@@ -17,4 +17,7 @@ JAX uses XLA to optimize your ML code using cool compiler tricks and the program
 
 Automatic differentiation makes JAX the most exciting library for deep learning practitioners. Derivatives are integral part of back propagation which in turn is integral to the learning process of neural networks. This is done using **grad()** fnction in JAX.
 
-**Please refer the Colab Notebook for detailed explanations and Code on my github repsitory here - [Introducing JAX](https://github.com/yvrjsharma/JAX/blob/main/JAX_1.ipynb)**
+**Please refer the following Colab Notebooks for detailed explanations and Code on my github repsitory here -** 
+1. [Introducing JAX](https://github.com/yvrjsharma/JAX/blob/main/JAX_1.ipynb)
+2. [Stateless JAX, PyTreees, and Multi Layer Perceptron](https://github.com/yvrjsharma/JAX/blob/main/JAX_2.ipynb)
+3. [JAX: PMap for parallelism and Advanced Autodiff](https://github.com/yvrjsharma/JAX/blob/main/JAX_3.ipynb)
