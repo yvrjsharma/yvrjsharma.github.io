@@ -5,7 +5,7 @@ I built a little ML powered app over the Christmas holidays, hope you are going 
 Let's Go!
 
 
-# Table of Content
+## Table of Content
 
 * HuggingFace introduction
 * Gradio introducttion
@@ -13,6 +13,15 @@ Let's Go!
 * How I built it
 * How you can access the app
 * Conclusion
+
+this is test 
+
+1. HuggingFace introduction
+2. Gradio introducttion
+3. What I built
+4. How I built it
+5. How you can access the app
+6. Conclusion
 
 
 # Huggingface
@@ -38,6 +47,7 @@ After this, next step is to copy the translated text onto the 'cleansed' image. 
 # How You Can Access It
 My HuggingFace - Gradio app can be accessed on my account page on thier website, its accessible to public and is available over here - [Translate English Text to Your Regional Language In Your Forwarded Images](https://huggingface.co/spaces/ysharma/TranslateQuotesInImageForwards).
 Providing the demo in form of an animation below.
+
 ![](/images/20211223_064321.gif)
   
  
