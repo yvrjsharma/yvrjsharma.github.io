@@ -20,7 +20,7 @@ HuggingFace is a startup in the AI field, and there mission is to democratize go
 ## Gradio 
 [Gradio](https://gradio.app/) is the fastest and easiest way to demo your ML models with a very friendly and feature-rich UI. Almost anyone can us it without a manual and with just a little intuition. You can install Gradio library easily using pip install. I used both Hugging Face and Gradio on Colab so installations were allthemore starightforward and easier. You can deploy your ML model online using just 5-10 code lines depending on the complexity of your implementation. Recently, Gradio has made it possible to embed your deployed ML model to any webpage of your choice. I have done the same at the end of this article, check it out. Gadio code helps you generate a public link for your deployed ML model/app which you can then share with your friends, colleagues at work or a potential employer or collaborator.  
 
-## What I Built
+## What I Built 
 I built a fun project in last couple days using HuggingFace and Gradio functionalities. This project employs mage analysis, language translation and OCR techniques. A user can select an image of his choice with some english text over it as an input. For example, an image with some motivational text written over it like the ones we all receive in our family whatsapp groups all the time. He then gets to make a selection from the given 7 languages as the output language - German, Spanish, French, Turkish, Hindi, Arabic, and Irish. The app then outputs the same image as input but with text now translated in the language selected by the user.
 
 ## How I Built It
