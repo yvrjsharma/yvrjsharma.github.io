@@ -1,8 +1,11 @@
 ![](/images/gradioapp3.jpg)
 
-I built a little ML powered app over the Christmas holidays, hope you are going to enjoy it as much as I did while building it. Spaces is a new and extremly useful tool to deploy or showcase your ML apps to the world. You can refer these videos - [Build and Deploy a Machine Learning App in 2 Minutes](https://www.youtube.com/watch?v=3bSVKNKb_PY) or [Building Machine Learning Applications Fast](https://www.youtube.com/watch?v=c7mle2yYpwQ&t=738s) released by Huggingface, to get more idea about it. Also, please refer this wonderful [blogpost](https://huggingface.co/blog/gradio-spaces) on how you can use HuggingFace Spaces and Gradio in matter of few lines of code. 
+## Inspiration 
+I built a fun little ML powered app over the Christmas holidays, hope you have fun using it as much as I did while building it. User Research (*LOL*): The inspiration of building a tool like this comes from my mother's need of understanding *Whatsapp image forwards* which have English text written over them. I believe there are others as well who face the same struggle while trying to understand the daily fowards which are not in their regional language. Egro, added the support for 6 international languages. 
 
-Let's Go!
+Spaces is a new and extremly useful tool to deploy or showcase your ML apps to the world. You can refer these videos - [Build and Deploy a Machine Learning App in 2 Minutes](https://www.youtube.com/watch?v=3bSVKNKb_PY) or [Building Machine Learning Applications Fast](https://www.youtube.com/watch?v=c7mle2yYpwQ&t=738s) released by Huggingface, to get more idea about it. Also, please refer this wonderful [blogpost](https://huggingface.co/blog/gradio-spaces) on how you can use HuggingFace Spaces and Gradio in matter of few lines of code. 
+
+In this article I'll try and explain how I build this fun app and how you can build one too. Let's Go!
 
 
 ## Table of Content
@@ -35,13 +38,12 @@ Next, I am using [Kers-OCR](https://github.com/faustomorales/keras-ocr) library 
 After this, next step is to copy the translated text onto the 'cleansed' image. Current implementation does not take care of pasting the translated text exactly in place of the original English text, however i have plans to do that and more in my next iterations. 
 
 
-![](/images/gif1.gif)
 
 ## How You Can Access It
 My HuggingFace - Gradio app can be accessed on my account page on thier website, its accessible to public and is available over here - [Translate English Text to Your Regional Language In Your Forwarded Images](https://huggingface.co/spaces/ysharma/TranslateQuotesInImageForwards).
 Providing the demo in form of an animation below.
 
-![](/images/20211223_064321.gif)
+![](/images/gif1.gif)
   
  
 ## Conclusion :
