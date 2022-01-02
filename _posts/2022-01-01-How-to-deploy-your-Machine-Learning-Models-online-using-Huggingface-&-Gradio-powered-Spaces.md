@@ -63,7 +63,7 @@ Few points to keep in mind for an easy passage while building a complex Gradio a
 ## Awesome Community
 At the end of the day a strong community support helps you in learning about cool new avenues, uderstanding hard concepts, in resolving your issues, and in staying motivated to improve yourself and your skills. 
 
-There are many incredible folks out there building and helping ML communities day in day out. I would like to take a moment and specially thank a few folks for all the efforts that they put in daily. A lot of effort goes in replying to call outs for help, in writing easy to follow blogs, in inspiring other by shocasing their ML work and in doing everything that they do to put themselves out there. Reach out to them on Twitter and Discord over here -- 
+There are many incredible folks out there building and helping ML communities day in day out. I would like to take a moment and specially thank a few folks for all the efforts that they put in daily. A lot of effort goes in replying to call outs for help, in writing easy to follow blogs, in inspiring other by showcasing their own ML work and in doing everything that they do to put themselves out there. Reach out to them on Twitter and Discord over here -- 
 
 * [Abubakar Abid](https://twitter.com/abidlabs), [Ali](https://twitter.com/si3luwa), and [AK](https://twitter.com/ak92501) of Gradio labs
 * [Merve Noyan](https://twitter.com/mervenoyann) and [Omar](https://twitter.com/osanseviero) from HuggingFace
