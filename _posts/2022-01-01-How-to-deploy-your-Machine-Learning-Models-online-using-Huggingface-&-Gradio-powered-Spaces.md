@@ -35,6 +35,8 @@ Next, I am using [Kers-OCR](https://github.com/faustomorales/keras-ocr) library 
 After this, next step is to copy the translated text onto the 'cleansed' image. Current implementation does not take care of pasting the translated text exactly in place of the original English text, however i have plans to do that and more in my next iterations. 
 
 
+![](/images/gif1.gif)
+
 ## How You Can Access It
 My HuggingFace - Gradio app can be accessed on my account page on thier website, its accessible to public and is available over here - [Translate English Text to Your Regional Language In Your Forwarded Images](https://huggingface.co/spaces/ysharma/TranslateQuotesInImageForwards).
 Providing the demo in form of an animation below.
