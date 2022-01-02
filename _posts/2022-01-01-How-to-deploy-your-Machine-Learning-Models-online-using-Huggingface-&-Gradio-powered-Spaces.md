@@ -1,5 +1,5 @@
 
-![](/images/gradioapp1.jpg)
+![](/images/gradioapp2.jpg)
 
 I built a little ML powered app over the Christmas holidays, hope you are going to enjoy it as much as I did while building it. Spaces is a new and extremly useful tool to deploy or showcase your ML apps to the world. You can refer these videos - [Build and Deploy a Machine Learning App in 2 Minutes](https://www.youtube.com/watch?v=3bSVKNKb_PY) or [Building Machine Learning Applications Fast](https://www.youtube.com/watch?v=c7mle2yYpwQ&t=738s) released by Huggingface, to get more idea about it. Also, please refer this wonderful [blogpost](https://huggingface.co/blog/gradio-spaces) on how you can use HuggingFace Spaces and Gradio in matter of few lines of code. 
 
