@@ -16,12 +16,12 @@ Let's Go!
 
 this is test 
 
-1. HuggingFace introduction
-2. Gradio introducttion
-3. What I built
-4. How I built it
-5. How you can access the app
-6. Conclusion
+#### HuggingFace introduction
+#### Gradio introducttion
+#### What I built
+#### How I built it
+#### How you can access the app
+#### Conclusion
 
 
 # Huggingface
