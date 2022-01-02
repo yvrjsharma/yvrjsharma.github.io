@@ -14,6 +14,7 @@ Let's Go!
 #### 6. Conclusion
 
 
+
 ## Huggingface
 HuggingFace is a startup in the AI field, and there mission is to democratize good machine learning. Its an AI community trying to build the future in which everyone has equal opportunity and access to benfits of latest advances in AI. You can either browse their [model hub](https://huggingface.co/models) to discover, experiment and contribute to new sota models, for example, [gooogle-tapas](https://huggingface.co/google/tapas-base), [distilbert](https://huggingface.co/distilbert-base-uncased), [facebook-wav2vec2](https://huggingface.co/facebook/wav2vec2-base-960h), and so on. Or you can directly use their inference API to serve your moddels directly from HF infrastructure. The most famous artifact that HF has created so far is their Transformer library, which started as an nlp library but now has support for other modalities as well. Now, Transformer provides thousands of pretrained models to perform tasks on different modalities such as text, vision, and audio.
 
