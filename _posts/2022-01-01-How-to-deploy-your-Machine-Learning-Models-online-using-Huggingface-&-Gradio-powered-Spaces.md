@@ -6,6 +6,7 @@ I built a little ML powered app over the Christmas holidays, hope you are going 
 Let's Go!
 
 ## Table of Content
+
 * HuggingFace introduction
 * Gradio introducttion
 * What I built
@@ -41,7 +42,9 @@ Providing the demo in form of an animation below.
 [HuggingFace Spaces](https://huggingface.co/spaces) is a cool new feature, where anyone can host their AI models using two awesome SDKs - either [Streamlit](https://streamlit.io/) and Gradio. Spaces are a simple way to host ML demo apps directly on your HF profile page or your organization’s profile. This empowers our ML community to create our own little ML project portfolios, showcasing our projects at conferences, to stakeholders, or to any interested parties and to work collaboratively with other people in the ecosystem.
 
 ### Ease of use
+
 Few points to keep in mind for an easy passage while building a complex Gradio app like this one -
+
 * All the required libraries should be mentioned in *requirements.txt* file 
 * In case you have some *Debian dependencies* and you would want to use sudo apt install for the same, make sure you copy such libraries in *packages.txt* file
 * Make sure you are copying all the supporting files (images/fonts) over to your *app space repo*
@@ -50,21 +53,26 @@ Few points to keep in mind for an easy passage while building a complex Gradio a
 * This apps *app.py* code can help you take an inspiration in case you want to have multiple and different type of inputs and outputs (image/text/radio box *etc.*). It took me a while to figure out the right way. 
 
 ### Awesome Community
+
 At the end of the day a strong community support helps you in learning about cool new avenues, uderstanding hard concepts, in resolving your issues, and in staying motivated to improve yourself and your skills. Among many incredible folks out there building for community, I would like to take a moment and thanks a few of them for all the efforts they put in. Reach out to them on Twitter and Discord here -- 
+
 * [Abubakar Abid](https://twitter.com/abidlabs), [Ali](https://twitter.com/si3luwa),[AK](https://twitter.com/ak92501) of Gradio labs
 * [Merve Noyan](https://twitter.com/mervenoyann), [Omar](https://twitter.com/osanseviero) from HuggingFace
 * [HuggingFace Discord community](http://hf.co/join/discord)
 
 ### Future work
+
 The app is still a bit rough on the edges and I plan to improve it in future interations, for example, right now it might not process well certain screenshots and those images in which the text is slanted a bit. Planning to enable OCR for slant text and for images in which text is present at multiple places. I will also be adding more languages to the mix. And lastly would be trying to insert the translated text at the same spot as the original image and in similar font style and font size.
 
 ### Lastmile AI
+
 Gradio helps in bridging the gap between developing your ML models and showcasing them to the world. In my humble opinion, this is a crucial step in two main themes of this new year - Democratizing AI and Productioninzing AI.  
 
 
 My github repo and code can be accessed over here - [HugginFace_Gradio](https://github.com/yvrjsharma/HugginFace_Gradio/blob/main/Whatsapp_Image_Forwards_In_Your_Language_GradioDemo.ipynb).
 
 *If you enjoyed this article, please feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/yuvraj-sharma-a7154628/) or [Twitter](https://twitter.com/yvrjsharma) and do share your feedback and any other ML app ideas that you would want to implement yourself, I will be happy to help as much as I can*
+
 
 Image source - Photo by <a href="https://unsplash.com/@rev3n?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michał Kubalczyk</a> on <a href="https://unsplash.com/s/photos/tech?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
