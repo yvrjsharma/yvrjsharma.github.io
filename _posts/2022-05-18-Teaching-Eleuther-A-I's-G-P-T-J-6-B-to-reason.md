@@ -9,15 +9,23 @@ This fascinating thread from Peter (Twitter handle @npew ) pushed me to use #Ele
 
 Here I have tried using GPTJ to find words within a random mix of letters. I suppose this is not as easy a task for LLM as it is for humans. Some samples are -
 
-![image](https://user-images.githubusercontent.com/48665385/169142118-b12078ac-44ec-482c-9629-d832f8522ca5.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/48665385/169142118-b12078ac-44ec-482c-9629-d832f8522ca5.png" />
+</p>
 
 Mere prompting the GPTJ-6B model was not enough in the given case. As you can see below the model was unable to spot ‘insomnia’ and ‘protest’ even after increasing number of examples in prompt -
 
-![image](https://user-images.githubusercontent.com/48665385/169142408-a8d3804a-6958-42f5-9c55-7c62cf82971d.png) ![image](https://user-images.githubusercontent.com/48665385/169142437-2956ad87-736d-43b6-bd35-cc95611d2f71.png)
+<p float="left">
+  <img src="https://user-images.githubusercontent.com/48665385/169142408-a8d3804a-6958-42f5-9c55-7c62cf82971d.png" width="500"/>
+  <img src="https://user-images.githubusercontent.com/48665385/169142437-2956ad87-736d-43b6-bd35-cc95611d2f71.png" width="500"/>
+</p>
 
 However, following the “Teaching GPT to Reason” approach advocated by Peter in his GPT3 post and keeping in mind the effects of tokenization, I was able to prompt GPTJ-6B to catch the correct words successfully -
 
-![image](https://user-images.githubusercontent.com/48665385/169142765-54741a75-cd1c-40f8-9492-43bfe73c5ff7.png) ![image](https://user-images.githubusercontent.com/48665385/169142807-c4ff7d7c-244d-49e3-a9e5-71e5baa27bb4.png)
+<p float="left">
+  <img src="https://user-images.githubusercontent.com/48665385/169142765-54741a75-cd1c-40f8-9492-43bfe73c5ff7.png" width="500"/>
+  <img src="https://user-images.githubusercontent.com/48665385/169142807-c4ff7d7c-244d-49e3-a9e5-71e5baa27bb4.png" width="500"/>
+</p>
 
 Though this was a very small experiment with some cherrypicked examples, my takeaway is that large language models can actually be 'taught' in their own ways. 
 
